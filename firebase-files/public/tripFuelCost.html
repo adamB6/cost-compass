@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <main class="main">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js"></script>
+    <title>Trip Fuel Cost Calculator</title>
+</head>
+
+<body>
+    <h1><img class="img-general" src="fuelCalc.png" alt="Fuel Calculator">Fuel Cost Calculator</h1>
+    <p>This is a useful calculator for predicting the fuel costs of a trip</p>
+    <br>
+    <hr>
+
+    <div class="flex-container">
+
+        <div class="button-panel">
+            <div class="button-container">
+                <label for="costPerGallon">Cost per gallon ($):</label>
+                <input type="number" id="costPerGallon" step=".01" placeholder="Cost per gallon">
+            </div>
+
+            <div class="button-container">
+                <label for="milesPerGallon">Miles per gallon:</label>
+                <input type="number" id="milesPerGallon" step=".01" placeholder="Miles per gallon">
+            </div>
+
+            <div class="button-container">
+                <label for="miles">Trip distance (miles):</label>
+                <input type="number" id="miles" step=".01" placeholder="Miles">
+            </div>
+
+            <div class="button-container-small">
+                <button class="button-59-small" onclick="calculateCost()">Calculate</button>
+            </div>
+        </div>
+
+        <div class="fuel-container">
+            <div id="output">Please input your values and press Calculate.</div>
+        </div>
+
+    </div>
+
+    <div class="link-container">
+
+        <div class="tooltip"><a href="index.html">
+                <button class="button-59">Home</button>
+            </a>
+            <span class="tooltiptext">Go to the home page.</span>
+        </div>
+
+        <div class="tooltip"><a href="annualFuelUse.html">
+                <button class="button-59">Annuel Fuel Use</button>
+            </a>
+            <span class="tooltiptext">Determine your vehicle's average fuel costs.</span>
+        </div>
+
+        <div class="tooltip"><a href="tripFuelCost.html">
+                <button class="button-59">Trip Fuel Cost</button>
+            </a>
+            <span class="tooltiptext">Compute the total cost of gas for your trip</span>
+        </div>
+
+        <div class="tooltip"><a href="tripInsurance.html">
+            <button class="button-59">Insurance Quote</button>
+        </a>
+        <span class="tooltiptext">Choose between regular and premium insurance</span>
+    </div>
+
+    </div>
+</body>
+
+</html>

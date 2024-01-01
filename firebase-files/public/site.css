@@ -1,0 +1,276 @@
+/* Universal styles */
+h1 {
+    text-align: center;
+    margin-left: 10%;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    margin-left: 10%;
+}
+
+a {
+    color: darkgreen;
+}
+
+ul {
+    margin-top: 5px;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+.img-index {
+    max-width: 20%;
+}
+.img-general {
+    float:inline-end;
+    max-width: 100px; 
+    height: auto; 
+    margin-right: 40px;
+}
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-link {
+    transition: transform 0.2s;
+}
+
+.img-link:hover {
+    transform: scale(1.1);
+}
+
+.main {
+    border-style: groove;
+    box-shadow: 3px 3px 5px grey;
+
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-panel {
+    width: 60%;
+}
+
+.button-container {
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+/* Cool button style */
+.button-59 {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px grey;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-59:focus {
+    color: #171e29;
+}
+
+.button-59:hover {
+    border-color: #ACE1AF;
+    color: #ACE1AF;
+    fill: #ACE1AF;
+}
+
+.button-59:active {
+    border-color: darkgreen;
+    color: darkgreen;
+    fill: darkgreen;
+}
+
+@media (min-width: 768px) {
+    .button-59 {
+        min-width: 170px;
+    }
+}
+
+html,
+body {
+    margin: 2;
+    height: 100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+/* Trip Insurance styles */
+
+.insurance-table th,
+.insurance-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+.insurance-container {
+    max-height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+
+/* Trip Fuel Cost styles */
+.button-container-small {
+    text-align: center;
+    margin-right: 130px;
+}
+.button-59-small {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px grey;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 28px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-59-small:focus {
+    color: #171e29;
+}
+
+.button-59-small:hover {
+    border-color: #ACE1AF;
+    color: #ACE1AF;
+    fill: #ACE1AF;
+}
+
+.button-59-small:active {
+    border-color: darkgreen;
+    color: darkgreen;
+    fill: darkgreen;
+}
+
+@media (min-width: 768px) {
+    .button-59-small {
+        min-width: 170px;
+    }
+}
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 50%;
+  }
+  
+input:focus {
+    outline: none !important;
+    border:1px solid #006400;
+    box-shadow: 0 0 10px #ACE1AF;
+  }
+
+#output {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+
+}
+  label {
+    color: #006400;
+    font-weight: bold;
+    width: 75%;
+    float: left;
+  }
+  .fuel-container {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 100px;
+    width: 50%;
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    margin: 5%;
+    box-shadow: 3px 3px 5px grey;
+}

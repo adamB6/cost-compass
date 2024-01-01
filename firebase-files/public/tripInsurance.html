@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<main class="main">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Insurance Calculator</title>
+        <link rel="stylesheet" href="site.css">
+        <script src="site.js"></script>
+    </head>
+
+    <body>
+        <h1><img class="img-general" src="insuranceCalc.png" alt="Fuel Calculator">Trip Insurance Calculator</h1>
+        <p>We offer trip insurance. Use this calculator to determine costs.</p>
+        <br>
+
+        <!-- Flex Container -->
+        <div class="flex-container">
+
+            <!-- Buttons on top of each other -->
+            <div class="button-panel">
+                <div class="button-container">
+                    <button class="button-59" onclick="calculateInsurance(2, 'Regular', 'insuranceDiv');">Calculate
+                        Regular
+                        Insurance</button>
+                </div>
+                <div class="button-container">
+                    <button class="button-59" onclick="calculateInsurance(4, 'Premium', 'insuranceDiv');">Calculate
+                        Premium
+                        Insurance</button>
+                </div>
+            </div>
+
+            <!-- Output Table on the right -->
+            <div class="insurance-container">
+                <div id="insuranceDiv">
+                    <table>
+                        <tr><th>Miles</th><th>Insurance</th></tr>
+                        <tr id="output"><td>Press a button to calculate insurance cost.</td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                        <tr><td><br></td><td></td></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="link-container">
+
+            <div class="tooltip"><a href="index.html">
+                    <button class="button-59">Home</button>
+                </a>
+                <span class="tooltiptext">Go to the home page.</span>
+            </div>
+
+            <div class="tooltip"><a href="annualFuelUse.html">
+                    <button class="button-59">Annuel Fuel Use</button>
+                </a>
+                <span class="tooltiptext">Determine your vehicle's average fuel costs.</span>
+            </div>
+
+            <div class="tooltip"><a href="tripFuelCost.html">
+                    <button class="button-59">Trip Fuel Cost</button>
+                </a>
+                <span class="tooltiptext">Compute the total cost of gas for your trip</span>
+            </div>
+
+            <div class="tooltip"><a href="tripInsurance.html">
+                <button class="button-59">Insurance Quote</button>
+            </a>
+            <span class="tooltiptext">Choose between regular and premium insurance</span>
+        </div>
+
+        </div>
+
+    </body>
+</main>
+
+</html>
